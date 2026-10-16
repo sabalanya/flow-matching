@@ -1,6 +1,6 @@
-# Flow Matching
+# Flow Matching from-scratch
 
-A learning-by-doing exploration of flow matching, progressing from 2D toy problems through MNIST experiments. Next steps: scale up to larger datasets (CIFAR) and fine-tune or run inference with pre-trained models.
+A learning-by-doing exploration of flow matching, progressing from 2D toy problems through MNIST experiments.
 
 ## What is flow matching?
 
@@ -19,6 +19,7 @@ Flow matching is a simulation-free generative modelling framework. A velocity fi
 |---|---|
 | [mnist_unconditioned_fm.ipynb](notebooks/mnist/mnist_unconditioned_fm.ipynb) | Baseline unconditioned flow matching on MNIST. |
 | [mnist_noise_variance.ipynb](notebooks/mnist/mnist_noise_variance.ipynb) | Effect of source noise variance σ on training loss and sample quality. |
+| [mnist_flow_inversion.ipynb](notebooks/mnist/mnist_flow_inversion.ipynb) | Inverting trained flows via `inverse_step` to map images back to the source distribution and inspect the latent space. |
 | [mnist_modes.ipynb](notebooks/mnist/mnist_modes.ipynb) | Using multimodal source distributions to identify modes. |
 | [mnist_ot_coupling.ipynb](notebooks/mnist/mnist_ot_coupling.ipynb) | Optimal transport coupling to reduce path length and improve training. |
 | [mnist_cond_base.ipynb](notebooks/mnist/mnist_cond_base.ipynb) | Conditioning by injecting class information into the source distribution. |
